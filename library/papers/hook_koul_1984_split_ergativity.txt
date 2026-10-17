@@ -1,0 +1,37 @@
+================================================================================
+PRONOMINAL SUFFIXES AND SPLIT ERGATIVITY IN KASHMIRI
+Peter Edwin Hook & Omkar N. Koul
+Bahri Publications / Topics in Kashmiri Linguistics
+================================================================================
+
+1. ASPECTUAL SPLIT ERGATIVITY
+Kashmiri exhibits an aspectual split in its case-marking and agreement systems:
+- Present, Imperfective, and Future tenses display Nominative-Accusative alignment:
+    su chhu par-aan (He is reading)
+    so chhe par-aan (She is reading)
+- Past tense (Perfective) displays Ergative-Absolutive alignment:
+    tam-an por akhbaar (He read the newspaper - 'akhbaar' is masculine singular, verb 'por' agrees with object)
+    tam-an pər kitaab (He read the book - 'kitaab' is feminine singular, verb 'pər' agrees with feminine object)
+
+2. THE FOUR NOUN DECLENSION CLASSES
+Nouns in Kashmiri divide into four declension classes governing how the ergative suffix is applied:
+- Class I (Masculine ending in consonant): adds -an (e.g., batakh -> batakan)
+- Class II (Masculine ending in -u / palatalized consonant): undergoes vowel shift and palatalization (e.g., gur -> gər')
+- Class III (Feminine ending in consonant): adds -i (e.g., kitaab -> kitaabi)
+- Class IV (Feminine ending in -i / -e): no overt ergative case suffix or takes -yi.
+
+3. PRONOMINAL SUFFIXES (CHWE)
+Kashmiri verbs carry pronominal suffixes that index the subject, object, or indirect object:
+- 1st person singular: -m (Ergative/Dative/Accusative)
+- 1st person plural: -y / -s
+- 2nd person singular: -th (Ergative/Dative)
+- 2nd person plural: -v (Ergative/Dative)
+- 3rd person singular: -n (Ergative/Dative)
+- 3rd person plural: -kh (Ergative/Dative)
+
+Example of pronominal suffix incorporating the agent:
+    par-u-m (read - PST - 1SG.ERG) = 'I read (it).'
+    wuchh-u-th-as (saw - PST - 2SG.ERG - 1SG.ACC) = 'You saw me.'
+
+4. HIERARCHY OF CASE & PERSON
+Agreement in Kashmiri past tense is regulated by a Person Hierarchy (1st > 2nd > 3rd). When a higher person acts on a lower person, direct agreement applies; inverse suffixes are triggered when a lower person acts on a higher person.

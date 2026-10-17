@@ -1,0 +1,14 @@
+================================================================================
+A DEDICATED SARCASM CONSTRUCTION IN KASHMIRI
+Peter Edwin Hook & Omkar N. Koul
+Bhasha: Journal of South Asian Linguistics, Philology and Culture (2022)
+================================================================================
+
+1. DISCOURSE PARTICLES & SARCASM
+In conversational Kashmiri, irony and sarcastic negation are grammaticalized through a dedicated construction involving the enclitic particle '-ay' and intonational pitch accent resetting:
+    su chhu-ay bod daanavan!
+    he is-SARC big genius
+    'As if he were a great genius!'
+
+2. PRAGMATIC CONSTRAINTS
+Unlike overt negation ('na' / 'ne'), the sarcasm construction asserts the affirmative proposition with inverted pragmatic polarity, universally recognized by native speakers across both Srinagar and rural speech communities.

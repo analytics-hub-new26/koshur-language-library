@@ -1,0 +1,38 @@
+================================================================================
+V-2 AND THE VERB COMPLEX IN KASHMIRI
+Peter Edwin Hook (University of Michigan) & Omkar N. Koul (CIIL / IILS)
+Published in: Aspects of Kashmiri Linguistics / South Asian Language Review
+================================================================================
+
+1. INTRODUCTION & THE V-2 TYPOLOGY
+Kashmiri (Dardic / Indo-Aryan) is unique among modern South Asian languages in possessing a strict Verb-Second (V2) word order in root/matrix finite clauses. While virtually all other Indo-Aryan, Dravidian, and Tibeto-Burman languages of South Asia are verb-final (SOV), Kashmiri requires that the finite verbal element (either the auxiliary or the simplex main verb) appear in the second structural constituent position of the clause.
+
+2. ROOT CLAUSE WORD ORDER
+In a typical declarative sentence, any major constituent may serve as the clause-initial topic (Topic / Spec,CP), immediately followed by the finite auxiliary or verb (C0 / V2 position):
+
+(1a) Subject-initial:
+    raaju chhu tseTa khyavaan
+    Raju-NOM AUX.M.SG bread eat-IPFV
+    'Raju is eating bread.'
+
+(1b) Object-initial (topicalized object):
+    tseTa chhu raaju khyavaan
+    bread-NOM AUX.M.SG Raju eat-IPFV
+    'Bread, Raju is eating.'
+
+(1c) Adverbial-initial:
+    az chhu raaju tseTa khyavaan
+    today AUX.M.SG Raju bread eat-IPFV
+    'Today Raju is eating bread.'
+
+3. SUBORDINATE CLAUSE ASYMMETRY
+Unlike German, where subordinate clauses introduced by complementizers (like 'dass') exhibit Verb-Final order, Kashmiri displays an asymmetric pattern:
+- Relative clauses introduced by 'yus' / 'yim' allow SOV or V2 depending on register and focus.
+- Complement clauses introduced by 'zi' ('that') frequently retain V2 order, demonstrating that 'zi' does not block verb movement into the head of the CP projection in the same manner as German 'dass'.
+
+4. THE VERB COMPLEX & CLITIC CLUSTERING
+In Kashmiri, compound verbs, passive constructions, and aspectual periphrastics consist of a finite auxiliary in position 2 and a non-finite participle (infinitive or converb) occurring clause-finally or after the core arguments. Pronominal clitics representing ergative agents, nominative patients, and dative recipients affix directly to the auxiliary in position 2 in a rigid clitic hierarchy:
+    [Topic] + [AUX + Clitic_ERG + Clitic_DAT + Clitic_NOM] + [Subject] + [Object] + [Participle]
+
+5. CONCLUSION & COMPARATIVE IMPLICATIONS
+The presence of V2 in Kashmiri is an independent syntactic development within Dardic Indo-Aryan, interacting intricately with its split-ergative morphological alignment and rich pronominal suffix system.

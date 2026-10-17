@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>J&amp;K Government Land Records Translator &amp; Cadastral Decipherment Engine | English &amp; Hindi</title>
+  <meta name="description" content="Official computational translation and decipherment engine for Jammu & Kashmir historical land revenue records, deeds, and cadastral maps in English and Hindi with zero information error guarantee.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-emblem" title="Koshur Revenue Decipherment">ک</div>
+      <div class="brand-text">
+        <h1>J&amp;K Government Records Translator <span class="badge-official">Official Cadastral Archive</span></h1>
+        <p>Palaeographical Decipherment &amp; Cadastral Translation Engine for Historical Urdu, Shikasta &amp; Kashmiri Records</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div class="lang-switch-box" id="langSwitchBox">
+        <button class="lang-toggle-btn active" id="btnLangEn" onclick="setUserLangPreference('en')" title="Translate to Certified English">
+          🇬🇧 English
+        </button>
+        <button class="lang-toggle-btn" id="btnLangHi" onclick="setUserLangPreference('hi')" title="हिन्दी में प्रमाणित अनुवाद करें">
+          🇮🇳 हिन्दी
+        </button>
+        <button class="lang-toggle-btn" id="btnLangBoth" onclick="setUserLangPreference('both')" title="Dual Bilingual View (English &amp; Hindi)">
+          🌐 Both
+        </button>
+      </div>
+      <button class="btn-secondary" onclick="openCertificateModal()" id="btnViewCert" style="display:none;" title="Open Official Translation Certificate">
+        🖨️ View Certificate
+      </button>
+      <button class="btn-secondary" onclick="exportJSON()" id="btnExportJSON" style="display:none;" title="Export Full Structured Audit JSON">
+        💾 Export JSON
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="top-notice">
+    <div class="lead-text">
+      <strong>✨ Domain-Specific J&amp;K Revenue Intelligence:</strong> Deciphers Khat-i-Shikast cursive ligatures, survey plots (Khasra, Khewat, Khatoni), pre-decimal currency, and auto-converts statutory land units (1 Kanal = 20 Marlas = 5,445 sq ft). Cryptographic SHA-256 seal ensures zero information distortion.
+    </div>
+    <div class="std-badge">
+      Standard: J&amp;K Land Records Manual &amp; Financial Commissioner Guidelines
+    </div>
+  </section>
+
+  <div class="main-grid">
+    <!-- Left Column: Source Input -->
+    <section class="card" aria-label="Source Document Input">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="icon">📜</span>
+          <span>Source Document Input</span>
+        </div>
+        <span class="badge-official" id="statusBadge">Ready</span>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" id="tabTextBtn" onclick="switchTab('text')" role="tab">
+          📝 Raw Text / Archival Specimen
+        </button>
+        <button class="tab-btn" id="tabUploadBtn" onclick="switchTab('upload')" role="tab">
+          🖼️ Upload Image / PDF Scan
+        </button>
+      </div>
+
+      <!-- Specimen Selector -->
+      <div class="specimen-bar" id="specimenBar">
+        <div class="specimen-label">
+          <span>Or select a verified archival specimen:</span>
+          <button class="pill-btn" onclick="clearInputText()" style="font-size: 10px; padding: 2px 8px;">✕ Clear</button>
+        </div>
+        <div class="pills-row" id="pillsRow"></div>
+      </div>
+
+      <!-- Text Area Input -->
+      <div class="input-group" id="textInputGroup">
+        <textarea class="record-text urdu-font" id="recordInput" placeholder="Paste historical Urdu, Khat-i-Shikast, or Kashmiri land record text here..."></textarea>
+        
+        <div class="quick-keypad">
+          <span class="keypad-label">Insert:</span>
+          <button class="key-chip" onclick="insertKeypadTerm('خسرہ نمبر ')">خسرہ نمبر</button>
+          <button class="key-chip" onclick="insertKeypadTerm('کھیوٹ نمبر ')">کھیوٹ</button>
+          <button class="key-chip" onclick="insertKeypadTerm('کھتونی نمبر ')">کھتونی</button>
+          <button class="key-chip" onclick="insertKeypadTerm('کنال ')">کنال</button>
+          <button class="key-chip" onclick="insertKeypadTerm('مرلہ ')">مرلہ</button>
+          <button class="key-chip" onclick="insertKeypadTerm('سرسائی ')">سرسائی</button>
+          <button class="key-chip" onclick="insertKeypadTerm('آبی اول ')">آبی اول</button>
+          <button class="key-chip" onclick="insertKeypadTerm('بیع قطعی ')">بیع قطعی</button>
+          <button class="key-chip" onclick="insertKeypadTerm('فقط')">فقط</button>
+        </div>
+      </div>
+
+      <!-- Upload Dropzone -->
+      <div class="input-group" id="uploadInputGroup" style="display:none;">
+        <div class="dropzone" id="dropzone" onclick="document.getElementById('fileInput').click()">
+          <div class="dropzone-icon">📤</div>
+          <div style="font-weight: 600; font-size: 15px;">Click to upload or drag &amp; drop document</div>
+          <div style="font-size: 12px; color: var(--text-dim);">Accepts scanned images (PNG, JPG, TIFF, WEBP) or PDF files</div>
+          <input type="file" id="fileInput" accept="image/*,.pdf" style="display:none;" onchange="handleFileSelect(event)">
+        </div>
+
+        <div class="preview-container" id="previewContainer">
+          <img id="previewImg" class="preview-img" alt="Scanned Document Preview">
+          <div class="preview-meta">
+            <span id="previewName">Document</span>
+            <span id="previewStats" style="color: var(--accent-blue);">Preprocessed for OCR</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 14px;">
+          <div class="specimen-label">Load Archival Scans from Research Corpus:</div>
+          <div class="pills-row">
+            <button class="pill-btn" onclick="loadArchivalScan('page_66.png')">📖 Page 66 (Jamabandi Scan)</button>
+            <button class="pill-btn" onclick="loadArchivalScan('page_70.png')">📖 Page 70 (Bainama Sale Deed)</button>
+            <button class="pill-btn" onclick="loadArchivalScan('page_74.png')">📖 Page 74 (Rahannama Mortgage)</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-primary" id="btnTranslate" onclick="runTranslation()">
+        <span id="btnIcon">⚡</span>
+        <span id="btnText">Translate &amp; Decipher Record</span>
+      </button>
+    </section>
+
+    <!-- Right Column: Certified Translation & Analysis -->
+    <section class="card" aria-label="Translation Results">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="icon">⚖️</span>
+          <span id="transCardTitle">Certified Legal Translation</span>
+        </div>
+        <div style="font-size: 12px; color: var(--text-dim);" id="docIdBadge">JK-RECORD-TRANS</div>
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState">
+        <div class="empty-state-icon">🏛️</div>
+        <h2 style="font-size: 16px; margin-bottom: 6px; color: var(--text-muted); font-weight: 600;">No Record Deciphered Yet</h2>
+        <p style="font-size: 13px; max-width: 320px;">
+          Choose an archival specimen or upload a revenue deed to extract cadastral parcels, legal parties, and certified English or Hindi translation.
+        </p>
+      </div>
+
+      <!-- Results Display -->
+      <div class="result-container" id="resultContainer">
+        <!-- Cryptographic Zero-Error Banner -->
+        <div class="integrity-banner">
+          <div>
+            <span class="badge-integrity">✓ Zero Information Error Guarantee</span>
+            <span style="color: var(--text-muted); margin-left: 6px; font-size: 11.5px;">Survey Numbers &amp; Land Units Verified</span>
+          </div>
+          <div>
+            <span style="font-size: 11px; color: var(--text-dim);">SHA-256 Audit Seal:</span>
+            <span class="integrity-hash" id="resHash">-</span>
+          </div>
+        </div>
+
+        <!-- Metadata Grid -->
+        <div class="meta-grid">
+          <div class="meta-box">
+            <div class="label" id="lblDocType">Classification</div>
+            <div class="value" id="resDocType" style="color: var(--accent-gold);">-</div>
+          </div>
+          <div class="meta-box">
+            <div class="label" id="lblVillage">Village / Mauza</div>
+            <div class="value" id="resVillage">-</div>
+          </div>
+          <div class="meta-box">
+            <div class="label" id="lblDistrict">District</div>
+            <div class="value" id="resDistrict">-</div>
+          </div>
+          <div class="meta-box">
+            <div class="label" id="lblDate">Historical Era</div>
+            <div class="value" id="resDate">-</div>
+          </div>
+        </div>
+
+        <!-- Cadastral Card -->
+        <div class="cadastral-card">
+          <div class="cadastral-title">
+            <span id="lblCadastralHeader">Cadastral Survey &amp; Statutory Land Measurements</span>
+            <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);" id="resSurveyId">Khasra Survey</span>
+          </div>
+          <div class="unit-grid">
+            <div class="unit-cell">
+              <div class="unit-name" id="lblUnitLocal">Local Area</div>
+              <div class="unit-val" id="resLocalArea">0 K, 0 M</div>
+            </div>
+            <div class="unit-cell">
+              <div class="unit-name" id="lblUnitSqFt">Square Feet</div>
+              <div class="unit-val" id="resSqFeet">0</div>
+            </div>
+            <div class="unit-cell">
+              <div class="unit-name" id="lblUnitAcres">Standard Acres</div>
+              <div class="unit-val" id="resAcres">0.00</div>
+            </div>
+            <div class="unit-cell">
+              <div class="unit-name" id="lblUnitHa">Hectares</div>
+              <div class="unit-val" id="resHectares">0.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Operative Clauses -->
+        <div>
+          <div class="specimen-label" id="lblClausesHeader">Certified Operative Clauses &amp; Covenant Translation:</div>
+          <div class="clauses-box" id="resClauses"></div>
+        </div>
+
+        <!-- Decoded Khat-i-Shikast Formulas -->
+        <div id="formulasSection">
+          <div class="specimen-label" id="lblFormulasHeader">Decoded Scribal Formulas &amp; Khat-i-Shikast Ligatures:</div>
+          <div class="formulas-row" id="resFormulas"></div>
+        </div>
+
+        <!-- Statutory Revenue Lexicon -->
+        <div>
+          <div class="specimen-label" id="lblGlossaryHeader">Identified Cadastral &amp; Revenue Lexicon:</div>
+          <div class="glossary-wrap" id="resGlossary"></div>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="action-toolbar">
+          <button class="btn-secondary" onclick="copyTranslation()">📋 Copy Translation</button>
+          <button class="btn-secondary" onclick="downloadMarkdown()">📄 Download Markdown</button>
+          <button class="btn-secondary" onclick="openCertificateModal()">🖨️ Full Printable Certificate</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- Printable Certificate Modal -->
+<div class="modal-overlay" id="certModal" onclick="closeCertificateModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <div class="modal-bar">
+      <span>Official J&amp;K Translation Certificate Preview</span>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <button id="modalLangEnBtn" onclick="switchModalCertificate('en')" class="active">🇬🇧 English Cert</button>
+        <button id="modalLangHiBtn" onclick="switchModalCertificate('hi')">🇮🇳 हिन्दी प्रमाणपत्र</button>
+        <button onclick="printCertificate()">🖨️ Print</button>
+        <button onclick="closeCertificateModal()">✕ Close</button>
+      </div>
+    </div>
+    <iframe id="certIframe" style="width: 100%; height: 80vh; border: none;" title="Certificate Preview"></iframe>
+  </div>
+</div>
+
+<!-- Toast Alert -->
+<div class="toast" id="toastAlert"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

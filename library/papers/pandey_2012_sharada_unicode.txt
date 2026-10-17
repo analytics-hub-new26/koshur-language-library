@@ -1,0 +1,31 @@
+================================================================================
+PROPOSAL TO ENCODE THE SHARADA SCRIPT IN ISO/IEC 10646
+Anshuman Pandey (Department of History, University of California, Berkeley)
+Unicode Technical Committee Document L2/12-124
+================================================================================
+
+1. HISTORICAL CONTEXT & GEOGRAPHICAL RANGE
+The Sharada (𑆯𑆳𑆫𑆢𑆳) script emerged in Kashmir around the 8th century CE as a descendant of the Western branch of the Brahmi script. For over a millennium, it was the principal medium for recording Sanskrit literature, philosophical treatises (Kashmir Shaivism), astronomical texts, and Old Kashmiri vernacular poetry.
+
+2. UNICODE ENCODING BLOCK (U+11180 to U+111DF)
+The script was officially encoded in Unicode Standard Version 6.1 (January 2012):
+- Vowels: U+11183 (𑆃 A) to U+11190 (𑆐 AU)
+- Consonants: U+11191 (𑆑 KA) to U+111B2 (𑆲 HA)
+- Vowel Signs (Matras): U+111B3 to U+111BF
+- Virama (Halanta): U+111C0 (𑇀)
+- Kashmiri Specific Signs:
+    U+111C9: SHARADA SANDHI MARK
+    U+111CA: SHARADA SIGN NUKTA
+    U+111CB: SHARADA VOWEL SIGN SEPARATELY FORMED
+- Punctuation & Section Markers:
+    U+111C5: SHARADA DANDA (𑇅)
+    U+111C6: SHARADA DOUBLE DANDA (𑇆)
+    U+111C7: SHARADA ABBREVIATION SIGN (𑇇)
+    U+111DB: SHARADA SECTION MARK-1 (𑇛)
+    U+111DC: SHARADA SECTION MARK-2 (𑇜)
+
+3. LIGATURE FORMATION & CONJUNCT ARCHITECTURE
+Sharada possesses complex consonant clustering rules:
+- Subscripted forms of RA (Rakar: 𑇀𑆫) and YA (Yakash: 𑇀𑆪)
+- Specialized conjuncts for KSHA (𑆑𑇀𑆰), JNA (𑆘𑇀𑆚), and SHRA (𑆯𑇀𑆫)
+- Matsaryar palatalization signs in Kashmiri vernacular orthography.

@@ -1,0 +1,31 @@
+================================================================================
+KASHMIRI CLITICS AND AGREEMENT
+Kashi Wali (Syracuse University) & Ashok K. Koul (Brown University)
+Linguistic Inquiry / Topics in South Asian Linguistics
+================================================================================
+
+1. OVERVIEW OF PRONOMINAL CLITICS
+Kashmiri possesses an elaborate system of pronominal clitics that attach to the finite verb or auxiliary. Unlike true affixes, these clitics exhibit prosodic dependence on the V2 verbal head while syntactically satisfying argument positions of the theta grid.
+
+2. CLITIC HOST AND ATTACHMENT
+Because Kashmiri is Verb-Second, the clitic host is invariably the inflected element in position 2:
+    aslam-an dit-i-n-as kitaab
+    Aslam-ERG gave-3SG.ERG-3SG.DAT book-NOM
+    'Aslam gave him the book.'
+Here:
+    dit (verb stem)
+    -i- (agreement vowel)
+    -n (3rd person singular ergative agent clitic)
+    -as (3rd person singular dative recipient clitic)
+
+3. CLITIC CLUSTER ORDERING RESTRICTIONS
+The internal order of clitics attached to the verb follows a strict template:
+    STEM + [ASPECT/TENSE] + [ERGATIVE] + [DATIVE] + [ABSOLUTIVE]
+No variation in this ordering is permitted in Standard Kashmiri.
+
+4. CASE RESOLUTION & CLITIC DOUBLING
+Overt nominal arguments and their corresponding clitics can co-occur in Kashmiri (clitic doubling):
+    tam-is dyuut-u-n-as raaju-van tukun
+    him-DAT gave-M.SG-3SG.ERG-3SG.DAT Raju-ERG push
+    'Raju gave him a push.'
+Clitic doubling is obligatory for pronominal datives and non-honorific 1st/2nd persons, but optional for 3rd person nominals.

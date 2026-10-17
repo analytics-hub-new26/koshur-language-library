@@ -1,0 +1,21 @@
+================================================================================
+THE PRONUNCIATION OF KASHMIRI: KASHMIRI SOUNDS & TRANSCRIPTION
+T. Grahame Bailey (School of Oriental and African Studies, London)
+Published by: Royal Asiatic Society, James G. Forlong Fund Vol. XVI (1937)
+================================================================================
+
+1. THE VOWEL SYSTEM
+Kashmiri boasts an unusually complex vowel system comprising 16 distinct vowel phonemes:
+- Front unrounded: i, iː, e, eː
+- Central unrounded: ɨ, ɨː, ə, əː (rare in South Asia, requiring distinctive macrons)
+- Back rounded: u, uː, o, oː, ɔ, ɔː
+- Low central: a, aː
+
+2. MATRA VOWELS (FINAL WEAK VOWELS)
+A defining discovery of Bailey and Grierson is the presence of short, unaccented final vowels termed 'mātrā-vowels' (i-mātrā, u-mātrā). While scarcely audible in rapid speech, these vowels exert profound morphophonemic effects on preceding consonants and vowels through regressive assimilation (umlaut / epenthesis).
+
+3. PALATALIZATION (MATSARYAR)
+Every consonant in Kashmiri, with few exceptions, has a palatalized counterpart:
+    non-palatalized: gur (horse)
+    palatalized: gər' (horses)
+The dental series (t, th, d, n) and affricates (ts, tsh, ch, chh, z) undergo precise phonetic transformations in plural and past-tense environments.

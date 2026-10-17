@@ -1,0 +1,25 @@
+================================================================================
+VERB MOVEMENT AND THE SYNTAX OF KASHMIRI
+Rakesh M. Bhatt (University of Illinois at Urbana-Champaign)
+Kluwer Academic Publishers / Studies in Natural Language and Linguistic Theory
+================================================================================
+
+1. THE V2 PARADOX IN INDO-ARYAN
+The standard Indo-Aryan clause structure has long been characterized as head-final with canonical SOV order and right-headed functional projections (IP and VP). Kashmiri challenges this pan-South Asian generalization by exhibiting left-headed CP with obligatory movement of the finite verb to C0.
+
+2. DERIVATION OF THE ROOT CLAUSE
+Under Bhatt's generative framework:
+- The finite verb undergoes V-to-I movement to collect tense and inflectional features.
+- In root clauses, the finite verb moves from I0 to C0.
+- A maximal projection (XP) topicalizes or moves to Spec,CP to satisfy the V2 criterion (EPP on C).
+    [CP XP [C' V+I_i [IP ... t_i ... [VP ... ]]]]
+
+3. WH-MOVEMENT & INTERROGATIVE CONSTRUCTIONS
+Wh-phrases in Kashmiri root interrogatives move obligatorily to the position immediately preceding the finite verb (Spec,CP):
+    kemy por yi akhbaar?
+    who-ERG read-PST this newspaper
+    'Who read this newspaper?'
+If an adverbial is fronted ahead of the wh-word, the wh-word remains immediately pre-verbal, demonstrating that Kashmiri wh-elements target the designated specifier of the functional projection hosting the finite verb.
+
+4. IMPLICATIONS FOR UNIVERSAL GRAMMAR
+Kashmiri provides crucial empirical evidence that V2 is not an exclusively Germanic property, and that language contact and areal diffusion can reshape syntactic macro-parameters in Indo-Aryan.

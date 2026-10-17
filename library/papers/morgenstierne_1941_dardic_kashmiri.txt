@@ -1,0 +1,21 @@
+================================================================================
+DARDIC AND THE LINGUISTIC POSITION OF KASHMIRI
+Georg Morgenstierne (University of Oslo)
+Acta Orientalia / Indo-Iranian Journal
+================================================================================
+
+1. CLASSIFICATION OF DARDIC
+Morgenstierne conclusively demonstrated that the Dardic languages (including Kashmiri, Shina, Khowar, Kohistani, Pashai, and Kalasha) do not form a third independent branch of Indo-Iranian alongside Indo-Aryan and Iranian, but represent an archaic subgroup of Indo-Aryan that diverged early and remained insulated in the Hindu Kush and Himalayan valleys.
+
+2. ARCHAIC CONSONANT RETENTION IN KISHTWARI
+While Valley Kashmiri has simplified many Sanskrit conjuncts (e.g., tr- > tr / t):
+    Sanskrit 'bhrātā' -> Kashmiri 'bōi'
+Kishtwari (the southeastern dialect of Kashmiri) retains ancient Dardic consonant clusters:
+    Sanskrit 'trayo' -> Kishtwari 'trei'
+    Sanskrit 'kroḍa' -> Kishtwari 'kroel'
+
+3. LEXICAL COGNATES
+A comparative analysis across Kashmiri, Shina, and Khowar reveals a deeply shared pastoral, alpine, and domestic vocabulary distinct from Plains Indo-Aryan (Hindi/Punjabi):
+    Snow: Kashmiri 'sheen', Shina 'hin'
+    Cold: Kashmiri 'tur', Khowar 'tur'
+    Water/Spring: Kashmiri 'naag', Shina 'naag'
