@@ -3,9 +3,9 @@
 [![PyPI version](https://img.shields.io/badge/pypi-v1.1.0-blue.svg)](https://pypi.org/project/koshur/)
 [![Python Versions](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://pypi.org/project/koshur/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests Passing](https://img.shields.io/badge/tests-93%20passed-brightgreen.svg)]()
-[![Lexicon](https://img.shields.io/badge/lexicon-1%2C119%20entries-purple.svg)]()
-[![Digital Library](https://img.shields.io/badge/library-5.51M%2B%20words%20%7C%2060%20volumes-blueviolet.svg)]()
+[![Tests Passing](https://img.shields.io/badge/tests-99%20passed-brightgreen.svg)]()
+[![Lexicon](https://img.shields.io/badge/lexicon-1%2C616%20entries-purple.svg)]()
+[![Digital Library](https://img.shields.io/badge/library-5.51M%2B%20words%20%7C%2061%20volumes-blueviolet.svg)]()
 [![Scripts](https://img.shields.io/badge/scripts-Sharada%20%7C%20Devanagari%20%7C%20Perso--Arabic%20%7C%20Latin-orange)]()
 
 **Koshur** is an authoritative, production-grade computational linguistics toolkit, web development localization framework, and digital preservation library for the **Kashmiri language** (*Kōshur* / कॉशुर / کٲشُر / 𑆯𑆳𑆫𑆢𑆳) and its endangered regional sister dialects (**Kishtwari**, **Poguli**, **Siraji**, and **Rambani**).
@@ -18,7 +18,7 @@
 3. [Installation](#installation)
 4. [Quickstart Guide](#quickstart-guide)
    - [1. Multi-Script Transliteration](#1-multi-script-transliteration-sharada--devanagari--perso-arabic--latin)
-   - [2. Lexicon & Fuzzy Dictionary Lookup (1,119 Entries)](#2-lexicon--fuzzy-dictionary-lookup-1119-entries)
+   - [2. Lexicon & Fuzzy Dictionary Lookup (1,616 Entries)](#2-lexicon--fuzzy-dictionary-lookup-1616-entries)
    - [3. Web & Mobile App Localization (i18n & WebFonts)](#3-web--mobile-app-localization-i18n--webfonts)
    - [4. Date, Time & Calendar Formatting](#4-date-time--calendar-formatting)
    - [5. Multi-Script Search Indexing & Autocomplete](#5-multi-script-search-indexing--autocomplete)
@@ -123,9 +123,9 @@ result = koshur.transliterate("शीन", target_script="sharada")
 print(result) # Output: 𑆯𑆵𑆤
 ```
 
-### 2. Lexicon & Fuzzy Dictionary Lookup (1,119 Entries)
+### 2. Lexicon & Fuzzy Dictionary Lookup (1,616 Entries)
 
-The dictionary features an intelligent **5-stage lookup engine** that indexes **1,119 curated vocabulary entries** with 100% 4-script representation (Sharada, Devanagari, Perso-Arabic, Latin), resolving exact matches, handling diacritic insensitivity (e.g. typing `pheran` matches `Phēran`), alternative transliterations (`phoran`, `phiran`), aliases, and English/Hindi semantic queries:
+The dictionary features an intelligent **5-stage lookup engine** that indexes **1,616 curated vocabulary entries** with 100% 4-script representation (Sharada, Devanagari, Perso-Arabic, Latin), resolving exact matches, handling diacritic insensitivity (e.g. typing `pheran` matches `Phēran`), alternative transliterations (`phoran`, `phiran`), aliases, and English/Hindi semantic queries:
 
 ```python
 import koshur
